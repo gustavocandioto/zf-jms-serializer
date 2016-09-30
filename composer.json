@@ -1,5 +1,5 @@
 {
-    "name": "tomasmihalicka/jms-serializer-module",
+    "name": "iceshack/jms-serializer-module",
     "description": "Zend Framework 2 Module that integrates the jms serializer library",
     "type": "library",
     "license": "MIT",
@@ -13,6 +13,11 @@
         "zf2"
     ],
     "authors": [
+        {
+            "name": "Moritz Schröder",
+            "email": "moritz.schroeder@molabs.de",
+            "homepage": "https://www.molabs.de"
+        },
         {
             "name": "Martin Parsiegla",
             "email": "martin.parsiegla@gmail.com",
@@ -35,7 +40,7 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*",
+        "zendframework/zend-servicemanager": "2.*",
         "doctrine/doctrine-module": ">=0.5.1",
         "jms/serializer": "1.*"
     },
