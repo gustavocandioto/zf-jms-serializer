@@ -175,7 +175,7 @@ class Metadata extends AbstractOptions
      */
     public function getAnnotationCache()
     {
-        return "doctrine.cache.{$this->annotationCache}";;
+        return "doctrine.cache.{$this->annotationCache}";
     }
 
 }

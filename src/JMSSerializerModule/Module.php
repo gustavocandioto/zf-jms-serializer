@@ -29,10 +29,7 @@ use JMSSerializerModule\Options\Handlers;
 use JMSSerializerModule\Options\Metadata;
 use JMSSerializerModule\Options\PropertyNaming;
 use JMSSerializerModule\Options\Visitors;
-use JMSSerializerModule\Service\CamelCaseNamingStrategyFactory;
-use JMSSerializerModule\Service\DateTimeHandlerFactory;
 use JMSSerializerModule\Service\EventDispatcherFactory;
-use JMSSerializerModule\Service\FileLocatorFactory;
 use JMSSerializerModule\Service\HandlerRegistryFactory;
 use JMSSerializerModule\Service\MetadataCacheFactory;
 use JMSSerializerModule\Service\MetadataDriverFactory;
@@ -40,7 +37,6 @@ use JMSSerializerModule\View\Serializer;
 use Metadata\Driver\DriverChain;
 use Metadata\Driver\FileLocator;
 use Metadata\MetadataFactory;
-use Zend\Di\ServiceLocator;
 use Zend\Loader\AutoloaderFactory;
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
@@ -156,7 +152,7 @@ class Module implements
 
                     return new CamelCaseNamingStrategy($options->getSeparator(), $options->getLowercase());
                 },
-                'jms_serializer.identical_naming_strategy' => function (ServiceManager $sm) {
+                'jms_serializer.identical_naming_strategy' => function () {
                     return new IdenticalPropertyNamingStrategy();
                 },
                 'jms_serializer.serialized_name_annotation_strategy' => function (ServiceManager $sm) {
