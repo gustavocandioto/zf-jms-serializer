@@ -14,33 +14,14 @@
     ],
     "authors": [
         {
-            "name": "Moritz Schröder",
-            "email": "moritz.schroeder@molabs.de",
-            "homepage": "https://www.molabs.de"
-        },
-        {
-            "name": "Martin Parsiegla",
-            "email": "martin.parsiegla@gmail.com",
-            "homepage": "http://speanet.info"
-        },
-        {
-            "name": "Piotr Zając",
-            "email": "piotr.zajac@unixslayer.pl",
-            "homepage": "http://unixslayer.pl"
-        },
-        {
-            "name": "Tomas Mihalicka",
-            "email": "tomas@mihalicka.com",
-            "homepage": "http://mihalicka.com"
-        },
-        {
-            "name": "Community contributions",
-            "homepage": "https://github.com/Spea/JMSSerializerModule/contributors"
+            "name": "Toni Van de Voorde",
+            "email": "toni.vdv@gmail.com",
+            "homepage": "https://www.devexp.eu"
         }
     ],
     "require": {
         "php": ">=5.6",
-        "zendframework/zend-servicemanager": "~2.4",
+        "zendframework/zend-servicemanager": "~2.7",
         "doctrine/doctrine-module": "~1.2",
         "jms/serializer": "~1.0"
     },
@@ -51,11 +32,6 @@
     "autoload": {
         "psr-0": {
             "JMSSerializerModule\\": "src/"
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "0.1-dev"
         }
     }
 }
