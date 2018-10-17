@@ -1,5 +1,5 @@
 {
-    "name": "iceshack/jms-serializer-module",
+    "name": "adlogix/jms-serializer-module",
     "description": "Zend Framework 2 Module that integrates the jms serializer library",
     "type": "library",
     "license": "MIT",
@@ -39,15 +39,15 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
-        "zendframework/zend-servicemanager": "2.*",
-        "doctrine/doctrine-module": ">=0.5.1",
-        "jms/serializer": "1.*"
+        "php": ">=5.6",
+        "zendframework/zend-servicemanager": "~2.4",
+        "doctrine/doctrine-module": "~1.2",
+        "jms/serializer": "~1.0"
     },
     "require-dev": {
-        "zendframework/zend-developer-tools": "dev-master"
+        "zendframework/zend-developer-tools": "~1.2"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-0": {
             "JMSSerializerModule\\": "src/"
