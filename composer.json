@@ -1,5 +1,5 @@
 {
-    "name": "adlogix/zf-jms-serializer",
+    "name": "gustavocandioto/zf-jms-serializer",
     "description": "Zend Framework 2 Module that integrates the jms serializer library",
     "type": "library",
     "license": "MIT",
@@ -14,16 +14,15 @@
     ],
     "authors": [
         {
-            "name": "Toni Van de Voorde",
-            "email": "toni.vdv@gmail.com",
-            "homepage": "https://www.devexp.eu"
+            "name": "Gustavo Candioto",
+            "email": "gcandioto@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.6",
+        "php": ">=7.2",
         "zendframework/zend-servicemanager": "^2.7",
         "doctrine/doctrine-module": "^1.2",
-        "jms/serializer": "^1.0"
+        "jms/serializer": "^3.0"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.2"
